@@ -133,7 +133,7 @@ def get_user_favorites():
     return jsonify(response_body), 200
 
 
-# FAVORITES POSTS
+# FAVORITES POST
 @app.route('/favorite/planet/<int:planet_id>', methods=['POST'])
 def add_favorite_planets(planet_id):
     request_body = request.get_json(force=True)
